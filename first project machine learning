@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 
 
 x=np.array([1,2,3,4,5])
-y=np.array([4,5,7,9,11])
+y=np.array([3,5,7,9,11])
 
 m=0
 b=0
