@@ -18,6 +18,13 @@ for i in range(1000):
     db=(-2/n)*np.sum((y-y_pred))
     m=m-lr*dm
     b=b-lr*db
+    
+    
+mse = np.mean((y - y_pred) ** 2)
+print("MSE =", mse)
+
+r2=1-((np.sum(y-y_pred)**2)/(np.sum(y-np.mean(y)**2)))
+print(f"R square =  {r2}")
   
 print(f"slope m ={m}   b is {b}")  
 plt.scatter(x,y)
